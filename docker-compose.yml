@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  crm_test:
+    build: .
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:17
+    restart: always
+    environment:
+      POSTGRES_DB: website_dev
+      POSTGRES_USER: jsrueda_user
+      POSTGRES_PASSWORD: tu_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:

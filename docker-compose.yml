@@ -1,22 +1,41 @@
-version: '3.8'
+# La línea 'version: ' ha sido eliminada.
+
 services:
-  crm_test:
-    build: .
+  crm_sync_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: crm_sync_app_container
     env_file:
-      - .env
+      - .env # Carga todas las variables del .env para este servicio
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
+    restart: "no" # Cambiado para que no reinicie automáticamente
+
   postgres:
-    image: postgres:17
-    restart: always
+    image: postgres:13-alpine
+    container_name: postgres_db_container
+    restart: "no" # Cambiado para que no reinicie automáticamente
+    env_file: # Asegúrate de que el servicio postgres también lea el .env
+      - .env
     environment:
-      POSTGRES_DB: website_dev
-      POSTGRES_USER: jsrueda_user
-      POSTGRES_PASSWORD: tu_password
+      # Estas variables (POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD) son las que
+      # la imagen de Docker de 'postgres' espera.
+      # Sus valores se toman de las variables definidas en el .env
+      POSTGRES_DB: ${POSTGRES_DB_FOR_CONTAINER}
+      POSTGRES_USER: ${POSTGRES_USER_FOR_CONTAINER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD_FOR_CONTAINER}
     ports:
       - "5432:5432"
     volumes:
       - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      # Usa las variables de entorno que se establecen DENTRO del contenedor de postgres
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER_FOR_CONTAINER -d $$POSTGRES_DB_FOR_CONTAINER"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
 volumes:
   pg_data:

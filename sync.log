@@ -1,0 +1,94 @@
+2025-05-14 11:51:10,639 - __main__ - INFO - [main.py:44] - Logging configurado para sobrescribir. Nivel: INFO. Archivo de log: D:\Users\jsrueda\Documents\web_site_dev\sync.log
+2025-05-14 11:51:10,640 - __main__ - INFO - [main.py:49] - 🏁 Iniciando proceso de sincronización general...
+2025-05-14 11:51:10,640 - __main__ - INFO - [main.py:54] - --- Iniciando Sincronización de Mega Proyectos ---
+2025-05-14 11:51:10,640 - zoho_sync.services.sync_mega_projects - INFO - [sync_mega_projects.py:16] - 🚀 Iniciando sincronización de Mega Proyectos...
+2025-05-14 11:51:11,126 - zoho_sync.zoho.auth - INFO - [auth.py:26] - ✅ Access token obtenido/refrescado exitosamente.
+2025-05-14 11:51:11,127 - zoho_sync.zoho.mega_projects_api - INFO - [mega_projects_api.py:32] - ℹ️ Obteniendo Mega Proyectos desde Zoho (offset: 0, limit: 200)...
+2025-05-14 11:51:11,725 - zoho_sync.zoho.mega_projects_api - INFO - [mega_projects_api.py:41] - ✅ 55 Mega Proyectos recuperados (total en esta página: 55). Más registros: False
+2025-05-14 11:51:11,726 - zoho_sync.services.sync_mega_projects - INFO - [sync_mega_projects.py:40] - ℹ️ Procesando lote de 55 Mega Proyectos (offset: 0)...
+2025-05-14 11:51:12,347 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341053 ('ALSACIA LA PAZ') procesado (insertado/actualizado).
+2025-05-14 11:51:13,243 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341054 ('ALTOFARO') procesado (insertado/actualizado).
+2025-05-14 11:51:14,073 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341055 ('BELATERRA') procesado (insertado/actualizado).
+2025-05-14 11:51:14,927 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341056 ('BELLFORT') procesado (insertado/actualizado).
+2025-05-14 11:51:15,662 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341057 ('BUENAVISTA') procesado (insertado/actualizado).
+2025-05-14 11:51:16,625 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341058 ('CABECERA') procesado (insertado/actualizado).
+2025-05-14 11:51:17,177 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341059 ('CABRERO') procesado (insertado/actualizado).
+2025-05-14 11:51:18,013 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341060 ('CALLE 200') procesado (insertado/actualizado).
+2025-05-14 11:51:18,492 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341061 ('CITY CENTER') procesado (insertado/actualizado).
+2025-05-14 11:51:19,383 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341062 ('CIUDAD COUNTRY') procesado (insertado/actualizado).
+2025-05-14 11:51:20,264 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341063 ('CIUDAD DEL PARQUE') procesado (insertado/actualizado).
+2025-05-14 11:51:20,770 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341064 ('CIUDAD JARDIN') procesado (insertado/actualizado).
+2025-05-14 11:51:21,723 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341065 ('CIUDAD JARDIN CALI') procesado (insertado/actualizado).
+2025-05-14 11:51:22,294 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341066 ('CIUDAD MALLORQUIN') procesado (insertado/actualizado).
+2025-05-14 11:51:23,064 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341067 ('CIUDAD VERDE') procesado (insertado/actualizado).
+2025-05-14 11:51:23,679 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341068 ('FLORESTA CTGNA') procesado (insertado/actualizado).
+2025-05-14 11:51:24,161 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341069 ('GRAN RESERVA') procesado (insertado/actualizado).
+2025-05-14 11:51:25,064 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341070 ('IBERIA') procesado (insertado/actualizado).
+2025-05-14 11:51:25,827 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341071 ('LA QUINTA') procesado (insertado/actualizado).
+2025-05-14 11:51:26,582 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341072 ('LA SALLE') procesado (insertado/actualizado).
+2025-05-14 11:51:27,235 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341073 ('LA VEGA') procesado (insertado/actualizado).
+2025-05-14 11:51:27,776 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341074 ('MANANTIALES') procesado (insertado/actualizado).
+2025-05-14 11:51:28,581 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341075 ('MIRAFLORES') procesado (insertado/actualizado).
+2025-05-14 11:51:29,133 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341076 ('MIRAMAR') procesado (insertado/actualizado).
+2025-05-14 11:51:29,967 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341077 ('NORTE BOGOTA') procesado (insertado/actualizado).
+2025-05-14 11:51:30,471 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341078 ('PARQUE OESTE') procesado (insertado/actualizado).
+2025-05-14 11:51:30,971 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341079 ('PASEO DEL PUENTE') procesado (insertado/actualizado).
+2025-05-14 11:51:31,515 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341080 ('PLAZUELA') procesado (insertado/actualizado).
+2025-05-14 11:51:32,540 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341081 ('PROVENZA') procesado (insertado/actualizado).
+2025-05-14 11:51:33,400 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341082 ('PUERTA DORADA') procesado (insertado/actualizado).
+2025-05-14 11:51:33,946 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341083 ('RESERVA DE LA SIERRA') procesado (insertado/actualizado).
+2025-05-14 11:51:34,735 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341084 ('RICAURTE') procesado (insertado/actualizado).
+2025-05-14 11:51:35,495 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341085 ('RIO HATO') procesado (insertado/actualizado).
+2025-05-14 11:51:36,365 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341086 ('SAN JORGE GIRON') procesado (insertado/actualizado).
+2025-05-14 11:51:36,916 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341087 ('SAN JOSE') procesado (insertado/actualizado).
+2025-05-14 11:51:37,784 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341088 ('SAN RAFAEL') procesado (insertado/actualizado).
+2025-05-14 11:51:38,291 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341089 ('SANTA MARTA') procesado (insertado/actualizado).
+2025-05-14 11:51:39,234 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341090 ('SOACHA') procesado (insertado/actualizado).
+2025-05-14 11:51:39,708 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341091 ('SOLARIO') procesado (insertado/actualizado).
+2025-05-14 11:51:40,226 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341092 ('SUBA') procesado (insertado/actualizado).
+2025-05-14 11:51:40,825 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341093 ('TIERRA BUENA') procesado (insertado/actualizado).
+2025-05-14 11:51:41,390 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341094 ('TRIBECA') procesado (insertado/actualizado).
+2025-05-14 11:51:41,920 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341095 ('USME') procesado (insertado/actualizado).
+2025-05-14 11:51:42,468 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341096 ('VALLE DE LILI') procesado (insertado/actualizado).
+2025-05-14 11:51:43,012 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341097 ('VILLA CAROLINA') procesado (insertado/actualizado).
+2025-05-14 11:51:43,683 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341098 ('ZENTRAL') procesado (insertado/actualizado).
+2025-05-14 11:51:44,228 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341099 ('PARQUE ORIENTE') procesado (insertado/actualizado).
+2025-05-14 11:51:45,073 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341100 ('BOSQUES DE GUAYMARAL') procesado (insertado/actualizado).
+2025-05-14 11:51:45,584 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341101 ('METROPOLI') procesado (insertado/actualizado).
+2025-05-14 11:51:46,428 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341102 ('OTRO') procesado (insertado/actualizado).
+2025-05-14 11:51:46,997 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341103 ('PANORAMIK') procesado (insertado/actualizado).
+2025-05-14 11:51:47,542 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341104 ('LOS CERROS') procesado (insertado/actualizado).
+2025-05-14 11:51:48,516 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341105 ('COSTANERA') procesado (insertado/actualizado).
+2025-05-14 11:51:49,068 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341106 ('ASTORIA') procesado (insertado/actualizado).
+2025-05-14 11:51:49,627 - zoho_sync.db.mega_projects_db - INFO - [mega_projects_db.py:99] - ✅ Mega Proyecto ID 5032768000369341107 ('PORTAL DEL GENOVES') procesado (insertado/actualizado).
+2025-05-14 11:51:49,630 - zoho_sync.services.sync_mega_projects - INFO - [sync_mega_projects.py:58] - ℹ️ No hay más registros de Mega Proyectos indicados por Zoho.
+2025-05-14 11:51:49,630 - zoho_sync.services.sync_mega_projects - INFO - [sync_mega_projects.py:63] - ✅ Sincronización de Mega Proyectos finalizada. 55 de 55 proyectos procesados exitosamente.
+2025-05-14 11:51:49,630 - __main__ - INFO - [main.py:57] - --- Sincronización de Mega Proyectos completada ---
+2025-05-14 11:51:49,630 - __main__ - INFO - [main.py:59] - --- Iniciando Sincronización de Atributos de 'Parametros' (Tipo='Atributo') ---
+2025-05-14 11:51:49,630 - zoho_sync.services.sync_project_attributes - INFO - [sync_project_attributes.py:16] - 🚀 Iniciando sincronización de Atributos de 'Parametros' (Tipo='Atributo')...
+2025-05-14 11:51:50,149 - zoho_sync.zoho.auth - INFO - [auth.py:26] - ✅ Access token obtenido/refrescado exitosamente.
+2025-05-14 11:51:50,150 - zoho_sync.zoho.project_attributes - INFO - [project_attributes.py:25] - ℹ️ Obteniendo atributos de 'Parametros' desde Zoho (offset: 0, limit: 200)...
+2025-05-14 11:51:50,736 - zoho_sync.zoho.project_attributes - INFO - [project_attributes.py:33] - ✅ 1 atributos de 'Parametros' recuperados de Zoho. Más registros: False
+2025-05-14 11:51:50,737 - zoho_sync.db.project_attributes_db - INFO - [project_attributes_db.py:30] - ℹ️ Iniciando procesamiento de 1 atributos (de Parametros) en PostgreSQL...
+2025-05-14 11:51:50,738 - zoho_sync.db.project_attributes_db - INFO - [project_attributes_db.py:55] - ✅ Procesamiento de atributos (de Parametros) completado. 1 procesados, 0 con errores/omitidos.
+2025-05-14 11:51:50,751 - zoho_sync.services.sync_project_attributes - INFO - [sync_project_attributes.py:43] - ✅ Sincronización de Atributos de 'Parametros' finalizada. 1 atributos procesados.
+2025-05-14 11:51:50,751 - __main__ - INFO - [main.py:62] - --- Sincronización de Atributos de 'Parametros' completada ---
+2025-05-14 11:51:50,751 - __main__ - INFO - [main.py:64] - --- Iniciando Sincronización de Proyectos Comerciales y Tipologías ---
+2025-05-14 11:51:50,751 - zoho_sync.services.sync_commercial_projects - INFO - [sync_commercial_projects.py:15] - 🚀 Iniciando sincronización de Proyectos Comerciales, Atributos y Tipologías...
+2025-05-14 11:51:51,272 - zoho_sync.zoho.auth - INFO - [auth.py:26] - ✅ Access token obtenido/refrescado exitosamente.
+2025-05-14 11:51:51,272 - zoho_sync.zoho.commercial_projects_api - INFO - [commercial_projects_api.py:33] - ℹ️ Obteniendo Proyectos Comerciales desde Zoho (offset: 0, limit: 200)...
+2025-05-14 11:51:52,185 - zoho_sync.zoho.commercial_projects_api - INFO - [commercial_projects_api.py:42] - ✅ 1 Proyectos Comerciales recuperados (Zoho count: 1). Más registros: False
+2025-05-14 11:51:52,186 - zoho_sync.services.sync_commercial_projects - INFO - [sync_commercial_projects.py:40] - ℹ️ Procesando lote de 1 Proyectos Comerciales (offset: 0)...
+2025-05-14 11:51:52,726 - zoho_sync.db.commercial_projects_db - INFO - [commercial_projects_db.py:143] - ✅ Proyecto Comercial HC 5032768000376690045 ('PANORAMIK') procesado.
+2025-05-14 11:51:53,418 - zoho_sync.db.commercial_projects_db - INFO - [commercial_projects_db.py:183] - ℹ️ Iniciando procesamiento de 7 tipologías para Proyecto HC 5032768000376690045...
+2025-05-14 11:51:53,423 - zoho_sync.db.commercial_projects_db - INFO - [commercial_projects_db.py:222] - ✅ 7 tipologías procesadas para Proyecto HC 5032768000376690045.
+2025-05-14 11:51:53,437 - zoho_sync.services.sync_commercial_projects - INFO - [sync_commercial_projects.py:85] - ℹ️ No hay más registros de Proyectos Comerciales indicados por Zoho.
+2025-05-14 11:51:53,437 - zoho_sync.services.sync_commercial_projects - INFO - [sync_commercial_projects.py:90] - ✅ Sincronización de Proyectos Comerciales y Tipologías finalizada.
+2025-05-14 11:51:53,437 - zoho_sync.services.sync_commercial_projects - INFO - [sync_commercial_projects.py:91] - 📊 Resumen: 1 proyectos obtenidos de Zoho.
+2025-05-14 11:51:53,438 - zoho_sync.services.sync_commercial_projects - INFO - [sync_commercial_projects.py:92] -   > 1 proyectos procesados exitosamente.
+2025-05-14 11:51:53,438 - zoho_sync.services.sync_commercial_projects - INFO - [sync_commercial_projects.py:93] -   > 0 proyectos fallaron o fueron omitidos antes de la detención (si ocurrió).
+2025-05-14 11:51:53,438 - __main__ - INFO - [main.py:67] - --- Sincronización de Proyectos Comerciales y Tipologías completada ---
+2025-05-14 11:51:53,438 - __main__ - INFO - [main.py:73] - 🧹 Limpiando recursos...
+2025-05-14 11:51:53,438 - zoho_sync.db.connection - INFO - [connection.py:63] - 🔌 Cerrando pool de conexiones PostgreSQL...
+2025-05-14 11:51:53,438 - zoho_sync.db.connection - INFO - [connection.py:65] - 🔌 Pool de conexiones PostgreSQL cerrado.
+2025-05-14 11:51:53,439 - __main__ - INFO - [main.py:82] - 🚪 Proceso de sincronización general finalizado.

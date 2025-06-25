@@ -1,18 +1,15 @@
 const express = require('express')
 const fs = require('fs');
 const path = require('path');
-// Imports de los módulos de sincronización
 const MegaSync = require('./megaProyectos');
 const AttributeSync = require('./projectAttributes');
 const ZohoToPostgresSyncProjects = require('./projects');
 const CitiesSync = require('./cities');
-
 const app = express()
-
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
  
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Conexion exitosa de la API')
 });
 
 app.post('/', async (req, res) => {
@@ -32,39 +29,8 @@ app.post('/', async (req, res) => {
             syncMega.run(),
             syncAttributes.run(),
             syncProjects.run()
-        ]);
-
-        // // --- Paso 1: Ciudades ---
-        // // Se ejecuta primero para que las FK de Proyectos funcionen
-        // console.log("\n--- PASO 1: CIUDADES ---");
-        
-        // await syncCities.run();
-        // console.log("✅ Sincronización de Ciudades completada.");
-
-        // // --- Paso 2: MegaProyectos ---
-        // // Se ejecuta para que las FK de Proyectos funcionen
-        // console.log("\n--- PASO 2: MEGAPROYECTOS ---");
-        
-        // await syncMega.run();
-        // console.log("✅ Sincronización de MegaProyectos completada.");
-
-        // // --- Paso 3: Atributos ---
-        // console.log("\n--- PASO 3: ATRIBUTOS ---");
-        
-        // await syncAttributes.run();
-        // console.log("✅ Sincronización de Atributos completada.");
-
-        // // --- Paso 4: Proyectos (y sus Tipologías) ---
-        // // Se ejecuta al final ya que depende de los anteriores
-        // console.log("\n--- PASO 4: PROYECTOS Y TIPOLOGÍAS ---");
-        
-        // await syncProjects.run();
-        // console.log("✅ Sincronización de Proyectos completada.");
-
-        // console.log("\n==================================================================");
-        // console.log("🎉 ¡TODAS LAS SINCRONIZACIONES SE HAN EJECUTADO!");
-        // console.log("==================================================================");
-
+        ]);        
+        console.log("🎉 ¡TODAS LAS SINCRONIZACIONES SE HAN EJECUTADO!");        
         res.send('Proceso de sincronización completado.');
     } catch (error) {
         console.error("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");

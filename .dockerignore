@@ -14,7 +14,7 @@
 node_modules/
 
 # Ignorar archivos de prueba
-tddDevTest/
+test/
 
 # Ignorar archivos de configuración
 .env

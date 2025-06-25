@@ -21,8 +21,7 @@ class CitiesSync {
             baseURL: 'https://www.zohoapis.com/crm/v2'
         };
     }
-
-    // Este método es genérico y no necesita cambios.
+   
     async getZohoAccessToken() {
         try {
             const response = await axios.post(
@@ -80,8 +79,7 @@ class CitiesSync {
     async insertCitiesIntoPostgres(cities) {
         if (!cities || cities.length === 0) {
             console.log("ℹ️ No hay ciudades para insertar en PostgreSQL.");
-            return { processedCount: 0, errorCount: 0 };
-        }
+            return { processedCount: 0, errorCount: 0 };        }
 
         // --- LÓGICA CLAVE PARA OBTENER CIUDADES ÚNICAS ---
         // Usamos un Map para filtrar los resultados y quedarnos solo con una entrada por cada 'Ciudad.id'.
@@ -118,10 +116,10 @@ class CitiesSync {
 
                 // Query para insertar o actualizar (UPSERT) en la tabla "Cities"
                 const upsertQuery = `
-                    INSERT INTO public."Cities" (id, "name", is_public)
+                    INSERT INTO public."Cities" (id,"name", is_public)
                     VALUES ($1, $2, $3)
                     ON CONFLICT (id) DO UPDATE SET
-                        "name" = EXCLUDED."name",
+                        "name" = EXCLUDED.name,
                         is_public = EXCLUDED.is_public;
                 `;
                 

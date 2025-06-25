@@ -2,7 +2,6 @@ require('dotenv').config();
 const { Pool } = require('pg');
 const axios = require('axios');
 
-
 // Nombre de clase: ZohoToPostgresSync está bien si es un nombre genérico,
 // pero MegaProyectosSync sería más descriptivo si esta clase *solo* maneja eso.
 class ZohoToPostgresSync {
@@ -66,21 +65,7 @@ class ZohoToPostgresSync {
                 WHERE Mega_proyecto_comercial = true
                 LIMIT ${offset}, 200
             `
-        }; // <--- Query COQL estaba como comentario /* ... */, asegurémonos que esté completa
-
-        // *** ¡VERIFICACIÓN IMPORTANTE! ***
-        // ¿Son estos *todos* los campos de `Mega_Proyectos` que necesitas
-        // para la inserción en `insertMegaProjectIntoPostgres`?
-        // Comparando con `insertMegaProjectIntoPostgres`:
-        // - id -> OK
-        // - Name -> OK (para `name`)
-        // - Direccion_MP -> OK (para `address`)
-        // - Slogan_comercial -> OK (para `slogan`)
-        // - Descripcion -> OK (para `description`)
-        // - Record_Image -> OK (para `gallery`)
-        // - Latitud_MP -> OK (para `latitude`)
-        // - Longitud_MP -> OK (para `longitude`)
-       
+        }; 
 
         try {
             // Llamada a Zoho (COQL): URL, body (query), headers (token) son correctos.

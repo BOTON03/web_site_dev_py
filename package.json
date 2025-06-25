@@ -8,8 +8,8 @@
     "projectatt": "node src/projectAttributes.js",
     "project": "node src/projects.js",
     "sync": "node sync.js",
-    "testConnection": "node ./tddDevTest/testConexiones.js",
-    "start": "node ./src/index.js"
+    "testConnection": "node ./test/conexion.test.js",
+    "start": "node ./src/main.js"
   },
   "keywords": [],
   "author": "",

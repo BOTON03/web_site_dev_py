@@ -164,5 +164,4 @@ class ProjectAttributesSync {
 
 module.exports = ProjectAttributesSync;
 
-// ... (código para ejecución directa sin cambios)
 

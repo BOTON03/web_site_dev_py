@@ -233,11 +233,10 @@ class ZohoToPostgresSyncProjects {
         } finally {
             client.release();
         }
-    }
+    }    
     
-    // (getTypologiesFromZoho - sin cambios, está bien)
     async getTypologiesFromZoho(accessToken, parentId) {
-        // ...código sin cambios...
+        
         try {
             const response = await axios.get(
                 `${this.zohoConfig.baseURL}/Tipologias/search?criteria=(Parent_Id.id:equals:${parentId})`,
@@ -259,10 +258,9 @@ class ZohoToPostgresSyncProjects {
             throw error;
         }
     }
-
-    // (insertTypologies - sin cambios, está bien)
+    
     async insertTypologies(projectHc, projectIdZoho, typologies) {
-        // ...código sin cambios...
+        
         if (!typologies || typologies.length === 0) {
              console.log(`ℹ️ No hay tipologías para insertar para proyecto HC ${projectHc}`);
              return;
@@ -329,10 +327,9 @@ class ZohoToPostgresSyncProjects {
             client.release();
         }
     }
-
-    // (run - sin cambios, está bien)
+   
     async run() {
-        // ...código sin cambios...
+        
         let connectionClosed = false;
         let totalProyectosZoho = 0;
         let proyectosProcesadosConExito = 0;

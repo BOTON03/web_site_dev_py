@@ -9,7 +9,7 @@ const app = express()
 const port = process.env.PORT || 5000
  
 app.get('/', (req, res) => {
-  res.send('Conexion exitosa de la API')
+  res.send('Conexión exitosa: API operativa y en línea.');
 });
 
 app.post('/', async (req, res) => {
@@ -30,7 +30,7 @@ app.post('/', async (req, res) => {
             syncAttributes.run(),
             syncProjects.run()
         ]);        
-        console.log("🎉 ¡TODAS LAS SINCRONIZACIONES SE HAN EJECUTADO!");        
+             
         res.send('Proceso de sincronización completado.');
     } catch (error) {
         console.error("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -52,7 +52,7 @@ app.post('/', async (req, res) => {
 })
  
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`[${new Date().toLocaleString()}] 🛠️ Modo development activo - escuchando en el puerto ${port}`);
 })
 
  

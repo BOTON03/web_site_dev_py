@@ -1,10 +1,10 @@
 const express = require('express')
 const fs = require('fs');
 const path = require('path');
-const MegaSync = require('./megaProyectos');
-const AttributeSync = require('./projectAttributes');
-const ZohoToPostgresSyncProjects = require('./projects');
-const CitiesSync = require('./cities');
+const MegaSync = require('./src/megaProyectos');
+const AttributeSync = require('./src/projectAttributes');
+const ZohoToPostgresSyncProjects = require('./src/projects');
+const CitiesSync = require('./src/cities');
 const app = express()
 const port = process.env.PORT || 5000
  
